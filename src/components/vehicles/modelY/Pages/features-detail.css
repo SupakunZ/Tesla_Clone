@@ -1,0 +1,22 @@
+.carousel-indicators [data-bs-target]{
+    width: 100% !important;
+    height: 100% !important;
+    background-color: blue ;
+}
+.slide{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+ }
+ .carousel-indicators{
+    position: static !important;
+    display: grid !important;
+    grid-template-columns: repeat(1,1fr) !important;
+ }
+ .detail-container{
+    height: 100vh !important;
+    background-color: black !important;
+ }
+
+ /* --------------------------------------------------------------- */
+
+

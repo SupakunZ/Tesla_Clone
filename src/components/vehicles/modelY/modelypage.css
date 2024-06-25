@@ -1,0 +1,246 @@
+
+/*------------------------ Page1 ------------------------*/
+.main-photo2{
+    z-index: 1;
+}
+.photo-button-Y{
+    display: flex;
+    gap: 22px;
+}
+.shadows{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top ,black, transparent ,transparent,transparent);
+    z-index: 0;
+}
+.photo-button-Y button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4.5px;
+}
+.photo-button-Y .button05{
+    width: 235px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 3px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.button04{
+    width: 235px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    background-color: #3E6AE1;
+    cursor: pointer;
+}
+.button04:hover{
+    background-color: #3257bd;
+}
+
+.button05:hover{
+    background-color: white;
+    color: rgba(23, 26, 32, 0.8);
+}
+
+.modely-detail{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: #FFFFFF;
+    gap: 4.2rem ;
+    
+    & .mass, .speed, .mortor{
+        line-height: 35px;
+    }
+    & h2{
+        font-size: 21px;
+        font-weight: 600;
+    }
+    & h4{
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+.modely-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 17px;
+    position: absolute;
+    bottom: 3.8vw;
+}
+.modely-content-photo02{
+    top: 16.5vh;
+    & h1{
+        font-size: 36px;
+    }
+}
+
+/*------------------------ Responsive Page1 ------------------------*/
+@media screen and (max-width: 899px) {
+    .modely-box{
+        bottom: 6vw;
+    }
+}
+@media screen and (max-width: 599px) {
+    .photo-button-Y{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        & .button04,.button05{
+            width: 100%;
+        }
+    }
+    .modely-box{
+        width: 320px;
+    }
+    .modely-detail{
+        gap: 15px;
+        & .mass, .speed, .mortor{
+            line-height: 30px !important;
+        }
+        & h2{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        & h4{
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+}
+/*------------------------ Responsive Page1 ------------------------*/
+/*------------------------ Page1 ------------------------*/
+
+
+
+/*------------------------ Page2 ------------------------*/
+.safety-box{
+    position: absolute;
+    bottom: 2.5vh;
+    left: 13.5vw;
+    width: 83%;
+    max-width: 40rem;
+
+    & h1{
+        font-size: 24px;
+        color: #FFFFFF;
+        margin-bottom: 28px !important;
+    }
+    & p{
+        font-size: 12px;
+        color: #FFFFFF;
+        line-height: 20px !important;
+    }
+}
+.safety-photo{
+    height: 115vh;
+}
+.safety-photo picture{
+    & img{
+        height: 115vh;
+    }
+}
+
+@media screen and (max-width:899px) {
+    .safety-box{
+        position: absolute;
+        bottom: 12vh;
+        left: 4vw;
+    
+        & h1{
+            margin-bottom: 18px;
+        }
+    }
+}
+
+/*------------------------ Page2 ------------------------*/
+
+
+
+
+/*------------------------ Page3 ------------------------*/
+.features-container{
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    /* justify-content: center; */
+}
+.features-videos video{
+    position: static;
+    height: 100%;
+    border-radius: 5px;
+}
+.features-grid-box{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 3.5rem;
+    max-width: 73%;
+    margin: auto;
+}
+.features-contents{
+    display: flex;
+    flex-direction: column;
+    padding-top: 12%;
+    gap: 30px;
+    
+    & h1{
+        font-size: 21px;
+        color: #FFFFFF;
+        line-height: 30px;
+    }
+    & p{
+        font-size: 13px;
+        line-height: 20px;
+        color: #FFFFFF;
+        width: 95%;
+        max-width: 45rem;
+    }
+}
+
+@media screen and (max-width:899px) {
+    .features-grid-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0;
+        gap: 1.5rem;
+        padding: 22px;
+        max-width: 100%;
+    }
+    .features-contents{
+        padding-top: 0;
+        gap: 18px;
+        
+        & h1{
+            font-size: 20px;
+            color: #FFFFFF;
+            line-height: 30px;
+        }
+        & p{
+            font-size: 12px;
+            line-height: 20px;
+            color: #FFFFFF;
+            width: 100%;
+        }
+    }
+    .features-container{
+        height: 100vh;
+    }
+}
+/*------------------------ Page3 ------------------------*/
+
+

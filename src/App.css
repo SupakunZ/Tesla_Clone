@@ -1,0 +1,915 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@font-face {
+    font-family:"Gotham-S";
+    src: url(./assets/font/GothamSSm-Book_Web.woff2);
+}
+@font-face {
+    font-family:"Gotham-M";
+    src: url(./assets/font/GothamSSm-Medium_Web.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none ;
+    list-style: none ;
+    font-family: "Gotham-M"; 
+}
+* ul{
+    display: flex;
+    margin: 10px;
+}
+body{
+    overflow-x: hidden;
+}
+.shadow{
+    position: fixed;
+    backdrop-filter: blur(4px);
+    z-index: 2;
+    inset: 0;
+    opacity: 0;
+}
+/*----------------------------- NavBar -----------------------------*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute ;
+    top: 0;
+    width: 100%
+}
+.navbar-main{
+    position: relative;
+    display: block;
+    left: 8px;
+    top: 4px;
+}
+.logo .logo-icon{
+    top: 21.5px;
+    height: 12.5px;
+    position: absolute;
+    margin-left:45px ;
+    z-index: 20;
+}
+.navbar-option{
+    position: relative;
+    display: block;
+    top: -2px;
+    z-index: 20;
+}
+.navbar-option ul li a{
+    font-size: 20px;
+    color: rgb(46, 46, 46);
+}
+.navbar-text li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+.navbar-option ul li{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+.navbar-option ul {
+    margin-right: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-text{
+    position: relative;
+    margin-left: 184px;
+    top: -5px;
+}
+.navbar-text li{
+    margin: 0 -15px;
+}
+.navbar-text li a{
+    font-size: 13px;
+    z-index: 20;
+    cursor: pointer;
+    padding: 7px 16px;
+    border-radius: 5px;
+}
+.click:hover{
+    background-color: rgb(241, 241, 241);
+}
+.option:hover{
+    background-color: #9ca3aa;
+}
+
+/*----------------------------- NavBar -----------------------------*/
+
+/*----------------------------- HomePages -----------------------------*/
+.main-photo{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+.main-photo img{
+    object-fit: cover;
+    z-index: -5;
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+.content-photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    position: relative;
+    top: 14.5vh;
+}
+.content-photo h1{
+    font-size: 37px;
+    font-family:"Gotham-S" ;
+}
+.content-text a,p,h1{
+    color: rgb(46, 46, 46);
+    position: relative;
+    z-index: 1;
+    font-family: "Gotham-S";
+    font-size: 14px;
+}
+.underline{
+    z-index: 999;
+}
+.underline:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 131px;
+    bottom: 11px;
+    transform: translateX(-100%);
+    background-color: black;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.2);
+}
+.underline:hover::after{
+    height: 1.5px;
+}
+.content-text{
+    display: flex;
+    font-size: 15px;
+}
+.photo-button01{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 14vh;
+}
+.photo-button01 button{
+    width: 265px;
+    height: 40px;
+    margin: 0 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: none;
+}
+.button01{
+    background-color: #171a20;
+    backdrop-filter: 8px;
+    color: white;
+    cursor: pointer;
+}
+.button01:hover{
+    background-color:#3f4147;
+}
+.button02{
+    background-color: #F4F4F4;
+    backdrop-filter: 8px;
+    color: rgb(46, 46, 46);
+    cursor: pointer;
+}
+.button02:hover{
+    background-color:#eeeeee;
+}
+.main-photo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+    position: relative;
+}
+.main-photo2 picture img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -6;
+    object-fit: cover;
+}
+.main-photo2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+}
+.content-photo02{
+    position: absolute;
+    top: 14vh;
+}
+.content-photo02 h1{
+    font-size: 37px;
+}
+.photo-button02{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 2vh;
+}
+.photo-button02 button{
+    width: 265px;
+    height: 40px;
+    margin: 0 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    margin-bottom:95px ;
+}
+
+.main-photo3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    height:100vh;
+    overflow: hidden;
+    position: relative;
+}
+.content-photo03{
+    top: 18vh;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    line-height: 45px;
+    width: 100%;
+}
+.photo-button03{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 14vh;
+}
+.content-photo03 h1{
+    font-size: 37px;
+    margin-bottom: -5px;
+    color: white;
+}
+.content-photo03 p{
+    font-size:14px ;
+    color: white;
+}
+video{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.photo-button03 .button-03{
+    width: 265px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 3px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.button-03:hover{
+    background-color: white;
+    color: rgba(23, 26, 32, 0.8);
+}
+.main-photo4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    height:100vh ;
+    overflow: hidden;
+    position: relative;
+}
+.main-photo4 img{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.content-photo04{
+    top: 17.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    line-height: 45px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: black;
+
+}
+.photo-button04{
+    margin-top: 690px;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+.content-photo04 h1{
+    font-size: 37px;
+    margin-bottom: -5px;
+}
+.content-photo04 p{
+    font-size:14px ;
+}
+.photo-button04{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 17vh;
+}
+.photo-button04 .button-04{
+    width: 265px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    color: white;
+    background-color: rgba(23, 26, 32, 0.8);
+    cursor: pointer;
+}
+
+
+.main-photo5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    height:100vh ;
+    overflow: hidden;
+    position: relative;
+}
+.main-photo5 img{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.content-photo05{
+    top: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: black;
+}
+.photo-button05{
+    margin-top: 640px;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+.content-photo05 h1{
+    font-size: 37px;
+    margin-bottom: -5px;
+}
+.photo-button05{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 17vh;
+}
+.photo-button05 .button-05{
+    width: 265px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    color: rgb(46, 46, 46);
+    background-color: rgba(244, 244, 244, 1);
+    cursor: pointer;
+}
+/*----------------------------- HomePages -----------------------------*/
+
+/*----------------------------- Footer -----------------------------*/
+.footerbar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0px;
+    background-color: black;
+    box-shadow: 0px -15px 150px black;
+    width: 100%;
+}
+.footerbar ul{
+    color: white;
+}
+.footerbar ul li a{
+    color: #d0d1d2;
+    font-size: 11px;
+    margin: 0 7px;
+}
+.footerbar ul li{
+    margin-bottom: 2px;
+}
+/*----------------------------- Footer -----------------------------*/
+
+/*----------------------------- Dropdown Option -----------------------------*/
+.dropdown01 a{
+    position: relative;
+    z-index: 3;
+}
+.dropdown-box01{
+    position: absolute;
+    height: 380px;
+    width: 240vh;
+    background-color: white;
+    top: -10px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown01:hover .dropdown-box01{
+    visibility: visible;
+    opacity: 1;
+}
+.navbar-text:hover a{
+    color: rgb(46, 46, 46);
+}
+.dropdown02 a{
+    position: relative;
+    z-index: 3;
+}
+.dropdown-box02{
+    position: absolute;
+    height: 326px;
+    width: 240vh;
+    background-color: white;
+    top: -10px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+.dropdown02:hover .dropdown-box02 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown03 a{
+    position: relative;
+    z-index: 3;
+}
+.dropdown-box03{
+    position: absolute;
+    height: 332px;
+    width: 240vh;
+    background-color: white;
+    top: -10px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+.dropdown03:hover .dropdown-box03 {
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown04 a{
+    position: relative;
+    z-index: 3;
+}
+.dropdown-box04{
+    position: absolute;
+    height: 380px;
+    width: 240vh;
+    background-color: white;
+    top: -10px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+.dropdown04:hover .dropdown-box04 {
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown05 a{
+    position: relative;
+    z-index: 3;
+}
+.dropdown-box05{
+    position: absolute;
+    height: 330px;
+    width: 250vh;
+    background-color: white;
+    top: -10px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+.dropdown05:hover .dropdown-box05 {
+    visibility: visible;
+    opacity: 1;
+}
+/*----------------------------- Dropdown Option -----------------------------*/
+
+.btn-hide{
+    display: none;
+    cursor: pointer;
+    padding: 8px 18.2px;
+    border-radius: 4px;
+    border: none;
+    font-size: 13px;
+    color: #171a20;
+    margin: 1rem 2.5rem;
+    background-color: #0000000D;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    right: -38px;
+}
+.btn-hide:hover{
+    background-color: #00000013;
+}
+
+/*----------------------------- Screen -----------------------------*/
+@media screen and (max-width : 1200px) {
+    #option-full{
+        display: none;
+    }
+    .btn-hide{
+        display: block;
+    }
+    .navbar-main{
+        display: none;
+    }
+}
+@media screen and (max-width: 838px) {
+     .photo-button01 button{
+        width: 130px;
+    }
+    .photo-button03 .button-03{
+        width: 130px;
+    }
+}
+@media screen and (max-width: 599px) {
+    .photo-button01 {
+       display: flex;
+       flex-direction: column;
+       gap: 18px 0;
+   }
+   .photo-button01 button{
+        width: 88%;
+    }
+    .photo-button03 .button-03{
+        width: 88%;
+    }
+}
+
+/*----------------------------- Screen -----------------------------*/
+
+/*----Content DropBox1----*/
+
+.warpcontent-01{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}   
+.model1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1vh;
+    left: 15vh;
+}
+.model1 img{
+    width: 100%;
+}
+.model-03,.modely,.cydertruck{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    margin: 0 10px;
+}
+.contentin h2{
+    font-size: 16px;
+    font-family: "Gotham-M";
+    font-weight: normal;
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+.contentin2{
+    display: block;
+    margin-right:12px;
+    margin-top: 0px;
+    
+}
+.contentin2 a span{
+    display: inline-block;
+    font-size: 12px;
+    font-family:"Gotham-S";
+    margin: 0px -16px;
+    text-decoration: underline solid rgba(0,0,0,0.1) 1px;
+    text-underline-offset: 2px;
+    color: transparent;
+    text-shadow: 0 0 0px rgba(0,0,0,0.7);
+}
+.content-model{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: -20vh;
+    padding-left: 33px;
+    border-left: rgb(231, 231, 231) solid 2px;
+    margin-top: 53px;
+}
+.content-model ul{
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;  
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+.content-model ul a{
+    font-size: 13px;
+    line-height: 8px; 
+}
+
+/*----Underline Effect----*/
+.content-model ul a:hover{
+    text-decoration: underline solid 2px;
+    text-underline-offset: 3px;
+}
+.contentin2 a span:hover{
+    text-decoration: underline solid rgba(0,0,0,0.1) 2px;
+}
+
+/*----Content DropBox2----*/
+.warpcontent-02{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}   
+.model2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 4vh;
+}
+.model2 img{
+    width: 100%;
+}
+.powerwall,.megapack{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 172px;
+    margin: 0 10px;
+}
+.content-model-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: -7.3vh;
+    top: 4vh;
+    padding-left: 33px;
+    border-left: rgb(231, 231, 231) solid 2px;
+}
+.content-model-2 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;  
+    margin-top: 3px;
+    margin-bottom: 12px;
+}
+.content-model-2 ul a{
+    font-size: 13px;
+    line-height: 8px; 
+}
+/*----Underline Effect2----*/
+.content-model-2 ul a:hover{
+    text-decoration: underline solid 2px;
+    text-underline-offset: 3px;
+}
+
+/*----Content DropBox3----*/
+.warpcontent-03{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}   
+.model3{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 4vh;
+    width: fit-content;
+    flex-direction: row;
+    right: 7vh;
+}
+.model3 img{
+    width: 100%;
+}
+.charging,.home,.spcharging{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+    margin: 0px 10px;
+}
+.content-model-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 4vh;
+    top: 4vh;
+    padding-left: 33px;
+    border-left: rgb(231, 231, 231) solid 2px;
+}
+.content-model-3 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;  
+    margin-top: 3px;
+    margin-bottom: 55px;
+}
+.content-model-3 ul a{
+    font-size: 13px;
+    line-height: 8px; 
+}
+/*----Underline Effect3----*/
+.content-model-3 ul a:hover{
+    text-decoration: underline solid 2px;
+    text-underline-offset: 3px;
+}
+
+/*----Content DropBox4----*/
+.warpcontent-04{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+.warpcontent-dis{
+    display: flex;
+    position: relative;
+    left: -18vh;
+    top: 3vh;
+}   
+.content-model01,.content-model02,.content-model03{
+    position: relative;
+}
+.content-model02{
+    margin-left: 70px;
+    margin-right:15px ;
+}
+.content-model01 ul{
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 8px;
+}
+.content-model01 ul a{
+    font-size: 13px;
+}
+.content-model02 ul{
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 8px;
+
+}
+.content-model02 ul a{
+    font-size: 13px;
+}
+.content-model03 ul{
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 8px;
+
+}
+.content-model03 ul a{
+    font-size: 13px;
+}
+span{
+    padding-left: 14px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #8e8f91;
+}
+/*----Underline Effect4----*/
+.content-model01 ul a:hover{
+    text-decoration: underline solid 2px;
+    text-underline-offset: 3px;
+}
+.content-model02 ul a:hover{
+    text-decoration: underline solid 2px;
+    text-underline-offset: 3px;
+}
+.content-model03 ul a:hover{
+    text-decoration: underline solid 2px;
+    text-underline-offset: 3px;
+}
+/*----Content DropBox5----*/
+.warpcontent-05{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}   
+.model5{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 4vh;
+    width: fit-content;
+    flex-direction: row;
+    right: 7vh;
+}
+.model5 img{
+    width: 100%;
+}
+.charging-sp,.vehicle,.apparel,.lifestyle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    margin: 0 13px;
+    right: 18vh;
+    cursor: pointer;
+}
