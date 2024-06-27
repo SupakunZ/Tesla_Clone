@@ -4,7 +4,7 @@ A Responsive real-like Tesla Clone created with ReactJs,React-router, Firebase f
 https://github.com/SupakunZ/Tesla_Clone/assets/168329218/8c07fab0-55fc-475d-9aaa-5d163b122637
 
 ## Live Demo 
-<a href='https://tesla-clone-1000.web.app/' target="_blank">Tesla-Clone</a>
+<a href='https://google.co.th/' target="_blank">Tesla-Clone</a>
 
 ## Features
 
