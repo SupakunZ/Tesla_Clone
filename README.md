@@ -3,10 +3,10 @@ Tesla Website Clone created with ReactJs,React-router and Bootstrap CSS.
 
 https://github.com/SupakunZ/Tesla_Clone/assets/168329218/8c07fab0-55fc-475d-9aaa-5d163b122637
 
-## 🚀 Live Demo 
+## 🚗 Live Demo 
 <a href='https://google.co.th/' target="_blank">Tesla-Clone</a>
 
-## 🌏 Features
+## 🚦 Features
 
   <ul>
       <li>Active navbar similar to original</li>
@@ -14,7 +14,7 @@ https://github.com/SupakunZ/Tesla_Clone/assets/168329218/8c07fab0-55fc-475d-9aaa
       <li>Responsive with all devices</li>
   </ul>
 
-## 👽 Technologyies Used
+## 🧭 Technologyies Used
   
   <ul>
       <li>ReactJS</li>
@@ -23,7 +23,7 @@ https://github.com/SupakunZ/Tesla_Clone/assets/168329218/8c07fab0-55fc-475d-9aaa
   </ul>
 
 
-## 🛰️ Installation
+## 🚧 Installation
 
 1. Clone this repository :
 
@@ -34,7 +34,7 @@ git clone https://github.com/SupakunZ/Tesla_Clone.git
 2. Navigate to the project folder and install dependencies :
 
 ```
-cd tesla-clone
+cd Tesla_Clone
 npm install
 ```
 
