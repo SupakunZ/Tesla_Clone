@@ -1,25 +1,45 @@
 # Tesla-Clone
-A Responsive real-like Tesla Clone created with ReactJs,React-router, Firebase for authentication, Redux for state management, AOS, Styled-components and Material-UI.
+Tesla Website Clone created with ReactJs,React-router and Bootstrap CSS.
 
 https://github.com/SupakunZ/Tesla_Clone/assets/168329218/8c07fab0-55fc-475d-9aaa-5d163b122637
 
-## Live Demo 
+## 🚀 Live Demo 
 <a href='https://google.co.th/' target="_blank">Tesla-Clone</a>
 
-## Features
+## 🌏 Features
 
   <ul>
       <li>Active navbar similar to original</li>
       <li>Smooth scrolling like original</li>
-      <li>Different components for each car</li>
-      <li>Persistent log-in even after reloading unless you sign-out</li>
-      <li>Your personalized dashboard on the account tab</li>
+      <li>Responsive with all devices</li>
   </ul>
 
-## Technologyies Used
+## 👽 Technologyies Used
   
   <ul>
       <li>ReactJS</li>
       <li>Bootstrap CSS</li>
       <li>React Router</li>
   </ul>
+
+
+## 🛰️ Installation
+
+1. Clone this repository :
+
+```bash
+git clone https://github.com/AndreaGauvreau/clone-tesla.git
+```
+
+2. Navigate to the project folder and install dependencies :
+
+```
+cd tesla-clone
+npm install
+```
+
+3. Launch the application in development mode :
+
+```
+npm run dev
+```
