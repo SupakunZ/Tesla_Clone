@@ -1,8 +1,25 @@
-# React + Vite
+# Tesla-Clone
+A Responsive real-like Tesla Clone created with ReactJs,React-router, Firebase for authentication, Redux for state management, AOS, Styled-components and Material-UI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://user-images.githubusercontent.com/76790227/150206550-f521be54-67bb-4288-b712-a9c24b82f57e.mp4
 
-Currently, two official plugins are available:
+## Live Demo 
+<a href='https://tesla-clone-1000.web.app/' target="_blank">Tesla-Clone</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+  <ul>
+      <li>Active navbar similar to original</li>
+      <li>Smooth scrolling like original</li>
+      <li>Different components for each car</li>
+      <li>Persistent log-in even after reloading unless you sign-out</li>
+      <li>Your personalized dashboard on the account tab</li>
+  </ul>
+
+## Technologyies Used
+  
+  <ul>
+      <li>ReactJS</li>
+      <li>Bootstrap CSS</li>
+      <li>React Router</li>
+  </ul>
