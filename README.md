@@ -28,7 +28,7 @@ https://github.com/SupakunZ/Tesla_Clone/assets/168329218/8c07fab0-55fc-475d-9aaa
 1. Clone this repository :
 
 ```bash
-git clone https://github.com/AndreaGauvreau/clone-tesla.git
+git clone https://github.com/SupakunZ/Tesla_Clone.git
 ```
 
 2. Navigate to the project folder and install dependencies :
