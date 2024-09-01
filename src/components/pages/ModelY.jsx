@@ -17,7 +17,7 @@ const ModelY = () => {
                             <h1>Model Y</h1>
                         </div>
                         <div class="photo-button01">
-                            <Link to={'/modely'} onClick={() => window.scrollY(0)} style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+                            <Link to={'/modely'} onClick={() => window.scrollY(0)} style={{ display: "flex", justifyContent: "center" }} className='linkto'>
                                 <button class="button01">Custom Order</button>
                             </Link>
                             <button class="button02">Learn More</button>

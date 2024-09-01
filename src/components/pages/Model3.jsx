@@ -21,7 +21,7 @@ const Model3 = () => {
                             </div>
                         </div>
                         <div class="photo-button01">
-                            <Link to={'/model3'} onClick={() => window.scrollY(0)} style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+                            <Link to={'/model3'} onClick={() => window.scrollY(0)} style={{ display: "flex", justifyContent: "center" }} className='linkto'>
                                 <button class="button01">Custom Order</button>
                             </Link>
                             <button class="button02">Test Drive</button>
