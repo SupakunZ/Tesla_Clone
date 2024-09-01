@@ -22,6 +22,9 @@
 body{
     overflow-x: hidden;
 }
+.off{
+    overflow-y: hidden!important;
+}
 .shadow{
     position: fixed;
     backdrop-filter: blur(4px);
@@ -912,4 +915,9 @@ span{
     margin: 0 13px;
     right: 18vh;
     cursor: pointer;
+}
+
+.showOption{
+    z-index: 999!important;
+    opacity: 1!important;
 }

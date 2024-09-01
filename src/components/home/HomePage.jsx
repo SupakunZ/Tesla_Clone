@@ -7,9 +7,9 @@ const HomePage = () => {
 
   return (
     <>
-        <Header data={"rgb(46, 46, 46)"}/>
-        <Pages/>
-        <Footer/>
+      <Header data={"rgb(46, 46, 46)"} />
+      <Pages />
+      <Footer />
     </>
   )
 }
