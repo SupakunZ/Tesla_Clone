@@ -10,7 +10,7 @@ import ModelYDetail from './components/vehicles/modelY/ModelYDetail.jsx';
 export const MenuContext = createContext();
 
 function App() {
-  const [menu, setMenu] = useState(true)
+  const [menu, setMenu] = useState(false)
 
   return (
     <MenuContext.Provider value={{ menu, setMenu }}>

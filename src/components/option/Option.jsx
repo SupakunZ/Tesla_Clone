@@ -8,8 +8,10 @@ const Option = () => {
     const { menu, setMenu } = useContext(MenuContext);
 
     useEffect(() => {
-        document.querySelector(".option-open").classList.toggle("showOption")
-        document.querySelector('body').classList.toggle("off")
+        return () => {
+            document.querySelector(".option-open").classList.toggle("showOption")
+            document.querySelector('body').classList.toggle("off")
+        }
     }, [menu])
 
     return (
