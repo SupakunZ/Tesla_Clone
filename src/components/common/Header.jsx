@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Header = ({ data }) => {
 
-    const { menu, setMenu } = useContext(MenuContext) ?? {}
+    const { menu, setMenu } = useContext(MenuContext)
     const [color, setColor] = useState(data);
 
     console.log(menu)
